@@ -11,7 +11,7 @@
   "dependencies": {
     "@headlessui/react": "^1.7.17",
     "@mux/mux-player": "^2.2.0",
-    "@mux/mux-player-react": "^1.11.3",
+    "@mux/mux-player-react": "^1.15.0",
     "@sanity/vision": "^3.20.2",
     "framer-motion": "^11.0.3",
     "next": "14.0.1",

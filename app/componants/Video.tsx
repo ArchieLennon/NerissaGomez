@@ -157,7 +157,8 @@ const [Mute,setMute] = useState(true);
         streamType="on-demand"
         playbackId= {vids[currentVid]}
         thumbnail-time="5"
-        autoplay
+        autoPlay
+
         loop
         muted={Mute}
         metadata={{
@@ -165,7 +166,7 @@ const [Mute,setMute] = useState(true);
           video_title: "J Hus - Crazy",
           viewer_user_id: "user-id-007",
         }}
-        accentColor="#ffffffff"
+        
       />
 
 
