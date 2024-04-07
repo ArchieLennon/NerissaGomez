@@ -6,7 +6,10 @@ import { useEffect,useState } from "react";
 
 function Cursor(){
 
-
+  if (typeof window !== "undefined") {
+    // Client-side-only code
+  }
+  
     const [mousePosition, setMousePosition] = useState({
         x:0,
         y:0
@@ -43,6 +46,9 @@ function Cursor(){
 
         <>
        
+
+       
+       
         <div className="w-screen h-screen   position: fixed   -left-3 top-0  z-0 pointer-events-none active:pointer-events-auto">
         <motion.h1 
 className=" active:text-gray-700"
@@ -58,7 +64,7 @@ transition={{ ease: "easeOut", duration: 0 }}
         </>
 
     )
-
+  
 
 
 }

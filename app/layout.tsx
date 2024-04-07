@@ -6,12 +6,14 @@ import './globals.css'
 import Navbar from './componants/navbar'
 import { Provider } from './componants/Provider'
 import Video from './componants/Video'
-import Cursor from './componants/Cursor'
 import SplashScreen from './componants/SplashScreen'
 import { useState } from 'react'
+import dynamic from 'next/dynamic'
 
 
-
+const DynamicCursor = dynamic(() => import('./componants/Cursor'),{
+  ssr: false,
+});
 
 
 
@@ -62,7 +64,7 @@ export default function RootLayout({
 
 
         <main className=" cursor-none max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">{children}
-        <Cursor></Cursor>
+        <DynamicCursor></DynamicCursor>
 
         {/* <div className="position: fixed top-0 left-0  w-screen h-screen" onClick={() =>setShow(!show)}>
 
