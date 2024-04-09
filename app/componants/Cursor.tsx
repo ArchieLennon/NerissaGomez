@@ -49,7 +49,7 @@ function Cursor(){
 
        
        
-        <div className="w-screen h-screen   position: fixed   -left-3 top-0  z-0 pointer-events-none active:pointer-events-auto">
+        <div className="w-screen h-screen text-white  position: fixed   -left-3 top-0  z-0 pointer-events-none active:pointer-events-auto">
         <motion.h1 
 className=" active:text-gray-700"
 variants={variants}
